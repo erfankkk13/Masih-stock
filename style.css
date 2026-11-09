@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #1b1b1b;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: #d9aa54;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d9aa54;
+}
+
+.cart {
+    padding: 12px;
+    background: #d9aa54;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 400px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #111, #38332a);
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #d9aa54;
+    color: #111;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#products {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+#products h2 {
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product {
+    background: #202020;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px;
+}
+
+.product p {
+    color: #aaa;
+}
+
+.product button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: #d9aa54;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: inherit;
+}
+footer {
+    background: #1b1b1b;
+    text-align: center;
+    padding: 30px;
+    color: #d9aa54;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+}
